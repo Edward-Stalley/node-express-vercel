@@ -22,11 +22,18 @@ router.get("/ClassSelector/:yearId/:weekId/:classId", function (req, res) {
   });
 });
 
-// router.get("/flashcards", async (req, res, next) => {
-//   return res.status(200).json({
-//     title: "Express Testing",
-//     message: "The app is working properly!",
-//   });
-// });
+router.get("/", async (req, res, next) => {
+  return res.status(200).json({
+    title: "Express Testing",
+    message: "This is the flashcards!",
+  });
+});
+
+router.get("/cards", async (req, res, next) => {
+  return res.status(200).json({
+    title: "Express Testing",
+    message: "This is the flashcards!",
+  });
+});
 
 module.exports = router;
